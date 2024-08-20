@@ -87,8 +87,8 @@ class _PcProjectSectionState extends State<PcProjectSection> {
                               model.index = 2;
                             });
                           },
-                          child: projectBlock('Verve', "assets/verveweb.jpeg",
-                              "Predecessor of Strings!"),
+                          child: projectBlock('Cryptup', "assets/cryptupweb.png",
+                              "The Crypto Trading App!"),
                         ),
                         GestureDetector(
                           onTap: () {
