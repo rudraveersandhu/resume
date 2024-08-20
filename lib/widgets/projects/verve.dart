@@ -230,10 +230,12 @@ class _VerveState extends State<Verve> {
                 height: mainblock_height/1.9,
                 width: mainblock_width,
                 child: Image.network(
-                  'https://i.postimg.cc/0yMGsc2B/cryptup-folio.png',
+                  'https://i.postimg.cc/GtghQWV3/cryptup-folio-min.png',
                   fit: BoxFit.fitWidth,
                 ),
               ),
+
+
             ],
           ),
         ),

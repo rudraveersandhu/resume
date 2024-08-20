@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/project_model.dart';
 
@@ -176,10 +177,10 @@ class _AuroraState extends State<Aurora> {
                   ),
                   GestureDetector(
                     onTap: (){
-                      //_launchUrl(Uri.parse('https://github.com/rudraveersandhu/Verve'));
+                      _launchUrl(Uri.parse('https://github.com/rudraveersandhu/competus'));
                     },
                     child: Text(
-                      'private',
+                      'https://github.com/rudraveersandhu/competus',
                       style: TextStyle(fontSize: 16,
                           fontWeight: FontWeight.w700,
                           color: Colors.indigoAccent
@@ -203,5 +204,10 @@ class _AuroraState extends State<Aurora> {
 
       ],
     );
+  }
+  Future<void> _launchUrl(Uri _url ) async {
+    if (!await launchUrl(_url)) {
+      throw Exception('Could not launch $_url');
+    }
   }
 }

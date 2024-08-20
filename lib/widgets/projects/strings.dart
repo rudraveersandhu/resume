@@ -229,6 +229,30 @@ class _StringsState extends State<Strings> {
                       fontWeight: FontWeight.bold),
                 ),
               ),
+              Container(
+                height: mainblock_height/1.9,
+                width: mainblock_width,
+                child: Image.network(
+                  'https://i.postimg.cc/0QdzpH9r/17-min.png',
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+              Container(
+                height: mainblock_height/1.9,
+                width: mainblock_width,
+                child: Image.network(
+                  'https://i.postimg.cc/kGTDH66m/18-min.png',
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+              Container(
+                height: mainblock_height/1.9,
+                width: mainblock_width,
+                child: Image.network(
+                  'https://i.postimg.cc/x8fcgyd5/19-min.png',
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
             ],
           ),
         ),
